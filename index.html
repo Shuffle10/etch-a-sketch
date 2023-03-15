@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Project: Etch A Sketch</h3>
+    <div class="wrapper">
+        <div class="controls">
+            <div class="control-items">
+                <label> Pick A Color </label>
+                <input type="color" name="pen-color" id="pen-color" onchange="updateCanvas()">
+            </div>
+            <div class="control-items">
+                <label> Select Pixel Size </label>
+                <label id="size-display"></label>
+                <input type="range" min="10" max="100" value="0" class="slider" id="pixel-size"  onchange="updateCanvas()">
+            </div>
+
+            <div class="control-items">
+                <button id="clear-btn" onclick="updateCanvas()">Clear</button>
+            </div>
+        </div>
+        <div class="canvas"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
